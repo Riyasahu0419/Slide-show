@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #slideshow-container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height:80%;
+    }
+
+    #startStopBtn, #prevBtn, #nextBtn {
+      margin-top: 10px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    /* img{
+        width: 20px;
+        height: 30px;
+    } */
+  </style>
+</head>
+<body>
+
+    <div id="slideshow-container">
+        <button id="startStopBtn">Start</button>
+        <br>
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyuvpe_lCCxvrrCD-SXfjoeuxixoAygoKi6A&usqp=CAU" alt="Slide 1">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCQDYQqw8vgY1o-sbd612XobG7K99-L44kCmb3Oa9F1yMbHPGHEzZSA0DtTdz3lrtzVf0&usqp=CAU" alt="Slide 2">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQujklL1pJZPYiXuP90hqyfUZ6Pk418hDJOMdwg-CYgrbtl6O1JoXIENiAT_Os7jwexmrk&usqp=CAU" alt="slide 3">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprGIzxGiWe4SISolKs3lzzS8csI19iD38mQ&usqp=CAU" alt="slide 4">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRrymJGuV2mWmpaztgu7-D-lS6R-2l7ReZLFSYRSQjd2K4AZVpzoiLrQGNG-V2kiE7hM&usqp=CAU" alt="slide 5">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnCFxYG5kerplQk6oujV1nm_3dOhjMKy8FGA&usqp=CAU" alt="slide 6">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOsgE4NIAHgvT8qw-2wtxCaNaC3r37sPslXA&usqp=CAU" alt="slide 7">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMLnxYJ5K6gvjbeEZXWRjGXpT6fnkJaJZHxw&usqp=CAU" alt="slide 8">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnq310BURJ5xmbbpqLUUN82iNw1eecqLzegw&usqp=CAU" alt="slide 9">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2iluJSMPVF-IUcp1xvNs3gb9JBBJxw7KOVg&usqp=CAU" alt="slide 10">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuD8KI6PgXFNn4Yf0jEDmu_LGvvRsHYIhSFg&usqp=CAU" alt="slide 11">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSKdwA89tHw10EZsJCmzQJwkLKb93z9TufGA&usqp=CAU" alt="slide 12">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymHuNr1DkwDV43zpHHZkOkfs0ywV1jxTYhw&usqp=CAU" alt="slide 13">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-QsX77w3IElUHuoN3UdWJMKD2-eOcSQRTDg&usqp=CAU" alt="slide 14">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0-0vAF-gbrAswipwqaaQYHR4zKiKcTh3nKw&usqp=CAU" alt="slide 15">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWBTi4kqVhlKjoDhgUP7c2M8u_bLVOeNsug&usqp=CAU" alt="slide 16">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ms9dP_B4SunmkmUF-VSyeEmSmt1CBjBpvQ&usqp=CAU" alt="slide 17">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3IWFDnSQg_mnGFLVZgpmioGWYrLuXuHqo6nHTBJ9d7PnmaoP4W_IQUPzpW8C8MDAvif8&usqp=CAU" alt="slide 18">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSdiyHhAMHoqDxRpxSDJZE-jbFEtjkOa63z1hHmbIpj51LH6qPqoOK1TjyaxibpXwBoc8&usqp=CAU" alt="slide 19">
+  <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSMe4SNxSszNg59bPyDJ1Ua2F7Pyr53QX9_8-w1C0ZdEj_WLYxT_tdRcsxeINaYWxZ5A8&usqp=CAU" alt="slide 20">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <button id="prevBtn">Previous</button>
+  <button id="nextBtn">Next</button>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
